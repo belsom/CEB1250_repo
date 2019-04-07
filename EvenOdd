@@ -1,0 +1,10 @@
+class PythonExercice:
+
+    i = 2
+    num = int(input("Enter a number: "))
+
+    #def evenOrOdd(result, i):
+    if num % i == 0:
+        print ("The number you have entered is even.")
+    else:
+        print ("The number you have entered is odd.")
