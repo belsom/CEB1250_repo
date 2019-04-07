@@ -1,0 +1,8 @@
+class ListOfNumber:
+    
+    listNumberGiven=[]
+    numberGiven = int(input())
+    for i in range (numberGiven):
+        concatenate = int(input())
+        listNumberGiven.append(concatenate)
+    print listNumberGiven
