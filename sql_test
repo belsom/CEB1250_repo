@@ -1,0 +1,12 @@
+create table course( course_id int primary key, course_name varchar(50) not null, course_description varchar(100));
+
+alter table course add course_day varchar(50);
+
+select count(*) from titles where title = 'Engineer';
+
+select count(*) from salaries where salary between 60000 and 90000;
+
+select count(*) from employees where hire_date > '01-01-1995';
+
+select count(*) from salaries where salary between 40000 and 60000;
+
