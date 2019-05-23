@@ -1,0 +1,26 @@
+import pandas as pd
+from matplotlib import pyplot as plt
+
+sample_data = pd.read_csv("sample_data.csv")
+
+plt.plot(sample_data.column_a, sample_data.column_b, 'o')
+plt.plot(sample_data.column_a, sample_data.column_c)
+plt.legend(["This is y", "This is z"])
+plt.xlabel("X")
+plt.ylabel("Y and Z")
+plt.show()
+
+data = pd.read_csv('countries.csv')
+#Compare the population growth in France and Germany
+
+france = data[data.country == 'France']
+germany = data[data.country == 'Germany']
+
+#plt.plot(senegal.year, senegal.population / 10**6)
+plt.plot(france.year, france.population / 10**6)
+plt.plot(germany.year, germany.population / 10**6)
+plt.legend(['France', 'Germany'])
+plt.xlabel("Year")
+plt.ylabel("Population")
+plt.show()
+
