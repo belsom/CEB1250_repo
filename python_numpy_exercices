@@ -1,0 +1,13 @@
+weight_kg = [75.5, 80.52, 83.6, 85.1, 86.18, 88.45]
+
+import numpy as np
+
+# Create a numpy array np_weight_kg from weight_kg
+np_weight_kg = np.array(weight_kg)
+#print(type(np_weight_kg))
+
+# Create np_weight_lbs from np_weight_kg
+np_weight_lbs = np_weight_kg * 2.2
+
+# Print out np_weight_lbs
+print(np_weight_lbs)
